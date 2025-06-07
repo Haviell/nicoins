@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicoins - Criptomoeda de Trocas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            color: #ffc107;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ffc107;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ffc107;
+            color: #000;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .intro, .section {
+            background-color: #2a2a2a;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .intro h2, .section h2 {
+            color: #ffc107;
+            margin-bottom: 20px;
+        }
+
+        .intro p, .section p, .section ul {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .section input, .section button, .top-button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+
+        .section input {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .section input[type="file"] {
+            padding: 5px;
+        }
+
+        .section button, .top-button {
+            background-color: #ffc107;
+            color: #000;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .section button:hover, .top-button:hover {
+            background-color: #e0a800;
+        }
+
+        .alert {
+            display: none;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .error {
+            display: none;
+            background-color: #dc3545;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .top-button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #000;
+            color: #ffc107;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Captura_de_tela_2025-06-06_153421-removebg-preview.png" alt="Logo da Nicoins" width="60" height="60">
+        <h1>Nicoins</h1>
+    </header>
+
+    <nav>
+        <a href="#intro">Sobre</a>
+        <a href="#ti">TI</a>
+        <a href="#logistica">Logística</a>
+        <a href="#rh">RH</a>
+        <a href="#empreendedorismo">Empreendedorismo</a>
+        <a href="#gestao">Gestão Financeira</a>
+        <a href="#marketing">Marketing</a>
+        <a href="#trabalhe">Trabalhe Conosco</a>
+    </nav>
+
+    <div class="container">
+        <div class="intro" id="intro">
+            <h2>Sobre a Nicoins</h2>
+            <p>A Nicoins é uma empresa inovadora no mercado de criptomoedas, oferecendo uma plataforma segura e eficiente para trocas digitais. Nossa missão é democratizar o acesso às criptomoedas, utilizando tecnologia de ponta e estratégias de negócios para atender às necessidades de nossos clientes. Com uma equipe dedicada em Tecnologia da Informação, Logística, Recursos Humanos, Empreendedorismo, Gestão Financeira e Marketing, garantimos excelência em todas as etapas do processo.</p>
+        </div>
+
+        <div class="section" id="ti">
+            <h2>Tecnologia da Informação</h2>
+            <p>O setor de TI da Nicoins é responsável por desenvolver e manter nossa plataforma de trocas de criptomoedas, garantindo segurança, escalabilidade e desempenho.</p>
+            <ul>
+                <li>Desenvolvimento de sistemas blockchain para transações seguras.</li>
+                <li>Manutenção de servidores e infraestrutura digital.</li>
+                <li>Implementação de medidas de cibersegurança contra ataques.</li>
+                <li>Integração de novas tecnologias, como contratos inteligentes.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="logistica">
+            <h2>Logística</h2>
+            <p>A Logística na Nicoins otimiza processos operacionais, garantindo eficiência na integração de serviços e parcerias.</p>
+            <ul>
+                <li>Gestão de parcerias com exchanges e carteiras digitais.</li>
+                <li>Coordenação de fluxos de dados entre plataformas.</li>
+                <li>Otimização de processos para transações rápidas.</li>
+                <li>Rastreamento de ativos digitais em tempo real.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="rh">
+            <h2>Recursos Humanos</h2>
+            <p>O RH da Nicoins foca no desenvolvimento e bem-estar da equipe, promovendo uma cultura de inovação.</p>
+            <ul>
+                <li>Recrutamento de talentos especializados em blockchain e finanças.</li>
+                <li>Treinamentos em tecnologias emergentes.</li>
+                <li>Gestão de benefícios e programas de incentivo.</li>
+                <li>Promoção de diversidade e inclusão no ambiente de trabalho.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="empreendedorismo">
+            <h2>Empreendedorismo</h2>
+            <p>O setor de Empreendedorismo incentiva a inovação e o crescimento sustentável da Nicoins.</p>
+            <ul>
+                <li>Desenvolvimento de novas soluções baseadas em criptomoedas.</li>
+                <li>Parcerias com startups e incubadoras de tecnologia.</li>
+                <li>Análise de tendências de mercado para expansão.</li>
+                <li>Suporte a empreendedores no ecossistema cripto.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="gestao">
+            <h2>Gestão Financeira</h2>
+            <p>A Gestão Financeira garante a saúde econômica da Nicoins, com foco em transparência e eficiência.</p>
+            <ul>
+                <li>Monitoramento de fluxos de caixa em criptoativos.</li>
+                <li>Gestão de riscos financeiros e volatilidade de mercado.</li>
+                <li>Planejamento estratégico para investimentos em tecnologia.</li>
+                <li>Relatórios financeiros transparentes para stakeholders.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="marketing">
+            <h2>Marketing</h2>
+            <p>O Marketing da Nicoins promove a marca e educa o público sobre criptomoedas.</p>
+            <ul>
+                <li>Criação de campanhas digitais para atrair novos usuários.</li>
+                <li>Educação financeira sobre o uso de criptomoedas.</li>
+                <li>Gestão de redes sociais e engajamento com a comunidade.</li>
+                <li>Parcerias com influenciadores no setor cripto.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="trabalhe">
+            <h2>Trabalhe Conosco</h2>
+            <p>Junte-se à equipe da Nicoins! Estamos sempre em busca de talentos apaixonados por criptomoedas, tecnologia e inovação. Entre em contato conosco e faça parte da nossa missão de transformar o mercado de trocas digitais.</p>
+            <ul>
+                <li><strong>Telefone:</strong> (19) 98382-6997</li>
+                <li><strong>Email:</strong> nicoinstec@gmail.com</li>
+            </ul>
+            <h3>Faça Seu Cadastro</h3>
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <input type="tel" id="telefone" placeholder="Seu Telefone" required>
+            <input type="file" id="curriculo" accept=".pdf,.doc,.docx" required>
+            <button onclick="fazerCadastro()">Enviar</button>
+            <div id="alerta" class="alert">Cadastro feito com sucesso!</div>
+            <div id="erro" class="error">Erro: Por favor, envie um arquivo PDF, DOC ou DOCX menor que 5MB.</div>
+        </div>
+    </div>
+
+    <div class="top-button-container">
+        <button class="top-button" onclick="voltarAoInicio()">Retornar ao Início</button>
+    </div>
+
+    <footer>
+        <p>© 2025 Nicoins. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href');
+                document.querySelector(sectionId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        function fazerCadastro() {
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone').value;
+            const curriculo = document.getElementById('curriculo').files[0];
+            const alerta = document.getElementById('alerta');
+            const erro = document.getElementById('erro');
+            alerta.style.display = 'none';
+            erro.style.display = 'none';
+            if (!nome || !email || !telefone || !curriculo) {
+                erro.style.display = 'block';
+                erro.textContent = 'Por favor, preencha todos os campos!';
+                return;
+            }
+            const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+            const maxSize = 5 * 1024 * 1024; 
+            if (!allowedTypes.includes(curriculo.type) || curriculo.size > maxSize) {
+                erro.style.display = 'block';
+                erro.textContent = 'Erro: Por favor, envie um arquivo PDF, DOC ou DOCX menor que 5MB.';
+                return;
+            }
+            alerta.style.display = 'block';
+            setTimeout(() => {
+                alerta.style.display = 'none';
+                document.getElementById('nome').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('telefone').value = '';
+                document.getElementById('curriculo').value = '';
+            }, 3000);
+        }
+
+        function voltarAoInicio() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
